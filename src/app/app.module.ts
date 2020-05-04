@@ -11,10 +11,12 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-// import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 //TEMPORAL
 import { FormsModule } from '@angular/forms';
+
+//SERVICIOS
+import { ServiceModule } from './services/service.module';
 
 
 @NgModule({
@@ -22,13 +24,13 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    // IncrementadorComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
